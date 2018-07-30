@@ -1,0 +1,196 @@
+body
+{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.wrapper
+{
+width: 100vw;
+height: 100vh;
+background-color: #1a1a1a;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+h1
+{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 25px;
+    letter-spacing: 6px;
+}
+
+.middlebox
+{
+    text-align: center;
+    width: 100%;
+    animation: show 1s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+p   
+{
+    font-size: 28;
+    font-weight: 300;
+    display: inline;
+    letter-spacing: 2px;
+    
+}
+
+.bull
+{
+    opacity: 1;
+    display: inline;
+    color:  #ff7b00;
+    letter-spacing: 2px;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ff7b00;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    transition: transform .5s, border 200ms ease-in-out;
+
+  
+}
+
+img:hover
+{
+    transform: scale(1.1);
+    border: 3px solid  rgba(255,123,0,0.1);
+    
+
+}
+
+.nav
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+
+.nav-item
+{
+    transition: all 200ms ease-in-out;
+    border-radius: 100%;
+    border: 1px solid  #ff7b00;
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 38px;
+    margin-right: 38px;
+
+}
+
+a
+{
+    color: #ffffff;
+    outline: 0;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-item a
+{
+font-size: 24px;
+}
+
+.text
+{
+    display: inline-block;
+    width: 500px;
+    margin-top: 25px;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.button
+{
+    border: 1px solid  #ff7b00;
+    width: 175px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size:20px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+    font-weight: 300;
+    color: #ffffff;
+    transition: all 200ms ease-in-out;
+    letter-spacing: 2px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background: rgba(255,123,0,0.6); 
+    color:rgba(255,255,255,1);
+    border: 1px solid  rgba(255,123,0,0.1);
+   
+
+}
+
+.button:hover {
+  cursor: pointer;
+    background: rgba(255,123,0,0.6); 
+    color:rgba(255,255,255,1);
+    border: 1px solid  rgba(255,123,0,0.1);
+}
+
+@keyframes show {
+  0% {
+    margin-top: -200px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: -100px;
+    opacity: 1;
+  }
+}
+
+.bg
+{
+    background: url("https://cdn.eso.org/images/publicationjpg/uhd_9428_panorama_eq.jpg") repeat-x bottom left;
+    height: 100%;
+    position: absolute;
+    background-size: 4000px;
+    width: 6000px;
+    opacity: 0.5;
+    background-color: #1a1a1a;
+    animation: bg 60s linear infinite;
+
+}
+
+@keyframes bg {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1500px;
+  }
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Nunito', sans-serif; */
